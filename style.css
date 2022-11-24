@@ -1,0 +1,104 @@
+body {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px 50px 0px 50px;
+    background-color: #222;
+    color: #ccc;
+}
+
+a {
+    text-decoration-color: #ccc;
+    color: inherit;
+}
+
+#projects {
+    margin: 0px 50px 0px 50px;
+}
+
+#projects > h3 {
+    text-align: center;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0px 0px 0px;
+}
+
+#face {
+    margin: 0px 50px 0px 0px;
+}
+
+#profile img {
+    max-width: 300px;
+    max-height: 300px;
+    background-color: white;
+}
+
+#profile > #face > p {
+    text-align: center;
+}
+
+#index > #bottom {
+    text-align: center;
+}
+
+#favoriteproblems {
+    background-color: #222;
+    color: #ccc;
+}
+
+#favoriteproblems ul li {
+    padding-bottom: 20px;
+}
+
+#favoriteproblems a {
+    text-decoration-color: #ccc;
+    color: inherit;
+}
+
+#favoriteproblems > h3 a {
+    color: #9d6f53;
+    text-decoration-color: #9d6f53;
+}
+
+#problemslist {
+    margin: 50px 0px 50px 0px;
+}
+
+#problemslist > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#problemslist > div > img {
+    margin: 0px 150px 0px 0px;
+}
+
+#problems > img {
+    max-width: 450px;
+    max-height: 450px;
+    margin-right: 50px;
+    background-color: white;
+}
+
+#problems > #sudokuimg {
+    width: 350px;
+    height: 350px;
+}
+
+#problems {
+    display: flex;
+    flex-direction: row;
+}
+
+#favoriteproblems > #top {
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+}
+
+#favoriteproblems > #bottom {
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+}

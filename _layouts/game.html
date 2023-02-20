@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {%- seo -%}
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+        {%- feed_meta -%}
+        {%- if jekyll.environment == 'production' and site.google_analytics -%}
+          {%- include google-analytics.html -%}
+        {%- endif -%}
+        <script type="text/javascript" src="/assets/scripts/image-change-script.js"></script>
+    </head>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h4 id="game-page-header">Over the years I've had the pleasure of developing a few games as school projects and I'm looking forward to developping more as a hobby or professionally if given the chance.</h4>
+        <ul id="game-list">
+            {%- for game in site.data.game.games -%}
+            <li>
+              <div class="gallery">
+                <img id="{{ game.name | replace: ' ', '-' | downcase }}-img" src="{{ game.pics[0] }}" />
+                <button id="{{ game.name | replace: ' ', '-' | downcase }}-button" data-pics="{{ game.pics }}" data-index="0" onclick="nextImageclick(this.id, this.dataset.pics, this.dataset.index)"> Next </button>          
+                <div class="game-info"> 
+                  <h2> {{ game.name }} </h2>
+                  <h3> Created {{ game.date }} </h3>
+                  <p> {{ game.description }} </p>
+                  <p><a href="https://github.com/Staggier/{{ game.name | remove: ' ' }}/#readme">Click here to visit the repo.</a></p>
+                </div>
+              </div>
+            </li>
+            {%- endfor -%} 
+        </ul>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+    "games": [
+        {
+           "name": "Mystery Maze",
+            "date": "November 2018",
+            "description": "Mystery Maze is my first created game, it is a console based game where you simply try to go through a maze all represented in ASCII characters.",
+            "pics": [
+                "/assets/images/Maze0.png",
+                "/assets/images/Maze1.png",
+                "/assets/images/Maze2.png",
+                "/assets/images/Maze3.png"
+            ] ,
+        },
+        {
+            "name": "Vector Space",
+            "date": "December 2020",
+            "description": "Vector Space is a bullet-hell inspired space shooter where you shoot down enemy ships while trying to avoid their deadly blasts.",
+            "pics": [
+                "/assets/images/VectorSpace0.png",
+                "/assets/images/VectorSpace1.png",
+                "/assets/images/VectorSpace2.png",
+                "/assets/images/VectorSpace3.png",
+            ]
+        },
+        {
+            "name": "Dungeon Descent",
+            "date": "December 2021",
+            "description": "Dungeon Descent is a game inspired by the hit rogue-lite The Binding of Isaac. Maneuver through rooms and floors of a dungeon and defeat its enemies as one of three selectable characters.",
+            "pics": [
+                "/assets/images/DungeonDescent0.png",
+                "/assets/images/DungeonDescent1.png",
+                "/assets/images/DungeonDescent2.png",
+                "/assets/images/DungeonDescent3.png",
+                "/assets/images/DungeonDescent4.png",
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-areas: 
+      "txt"
+      "img"
+      "btn";
+    grid-template-rows: auto 200px 50px;
+    grid-template-columns: 350px;
+    gap: 10px 0px;
+  }
+
+  .gallery {
+    margin-top: 5px;
+  }
+
+  .gallery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #game-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) { 
+  .gallery {
+    grid-template-areas: 
+      "img txt"
+      "btn txt";
+    grid-template-rows: 400px 25px;
+    grid-template-columns: 400px auto;
+    gap: 0px 50px;
+  }
+  
+  .gallery button {
+    margin-top: 20px;
+  }
+}
+
+#game-page-header {
+  padding-bottom: 25px;
+}
+
+#game-list {
+  list-style: none;
+}
+
+.gallery {
+  display: grid;
+  padding-bottom: 25px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  grid-area: img;
+  border-color: white;
+  border: 3px;
+  border-style: solid;
+}
+
+.gallery button {
+  grid-area: btn;
+  width: 25%;
+  justify-self: center;
+  align-self: center;
+}
+
+.game-info {
+  grid-area: txt;
+}

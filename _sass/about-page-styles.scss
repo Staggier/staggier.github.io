@@ -1,0 +1,21 @@
+@media (max-width: 425px) {
+  #about-wrapper ul {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+
+#about-wrapper ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-wrapper ul ul {
+  list-style: circle;
+}
+
+#about-wrapper ul ul {
+    flex-direction: column;
+  }
+  

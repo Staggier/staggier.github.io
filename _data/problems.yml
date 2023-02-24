@@ -1,0 +1,85 @@
+problems:
+  -
+    title: Lattice Paths
+    link: https://projecteuler.net/problem=15/
+    description: >-
+      The Lattice Paths problem is one of the first that stumped me for a bit on Project Euler. This problem is 
+      presented as follows; Starting from the top left corner of a square grid, how many paths are there to 
+      take assuming you can only move right or downwards?
+    solution: >-
+      Although simple for smaller grids for larger ones the problem started to seem intimidating, until the 
+      results started to feel familiar. Remembering some math that I was taught in the 420.A0 Computer Sciences
+      program at John Abbott I was able to dedude that this was a combinatorics problem and found the solution.
+    python: ''
+    code: >-
+      # The Problem can be found here: projecteuler.net/problem=15
+      
+      def factorial(n: int) -> int:
+        result: int = 1
+        for i in range(1, n + 1):
+          result *= i
+        
+        return result
+
+      def ncr(n: int, k: int) -> int:
+        return factorial(n) // (factorial(k) * (factorial(n - k)))
+
+      print(ncr(40, 20))
+    alt-code-link: https://github.com/Staggier/ProjectEuler/blob/master/scheme/PE%23015.rkt
+  -
+    title: Lexicographic permutations
+    link: https://projecteuler.net/problem=24
+    description: >-
+      The Lexicographic permutations problem was an interesting one that had me stuck for awhile, but after originally
+      working out the answer by hand I managed to write a working solution. The problem is presented as follows;
+      Given that a permutation is a set of ordered digits, find the 10^6th permutation of digits 0-9.
+    solution: >-
+      As I submitted my answer and dived into the forums on Project Euler to see what other people came up with I was
+      pleasantly surprised that I came up with the same algorithm as one of the more seasoned members on the forum. Since
+      we know n digits can occur n! times we can calculate and subtract the sum of the permutations from the total to slowly
+      build our answer.
+    alt-code-link: https://github.com/Staggier/ProjectEuler/blob/master/python/PE%23024.py
+  -
+    title: Square root convergents
+    link: https://projecteuler.net/problem=57
+    description: >-
+      The Square root convergents problem asks to solve for the first one thousand fractional representations of the
+      square root of two, and count number of fractions where the numerator of those fractions have more digits than the denomiator. 
+    solution: >-
+      This problem had a surprisingly easy solution, I was able to gather from the examples given that you could always solve for the
+      next fraction using cross multiplcation. The only thing to note is that you're using enough precision because it's easy
+      for the values to be slightly off.
+    scheme: ''
+    code: >-
+      ;; The Problem can be found here: projecteuler.net/problem=57
+
+      (define (sqrtConvergents num n d)
+        (if (= num 0)
+            0
+            (if (>(string-length (number->string n)) (string-length (number->string d)))
+              (+ 1 (sqrtConvergents (- num 1) (round (/ (* n (+ n d)) d)) (+ n d)))
+              (sqrtConvergents (- num 1) (round (/ (* n (+ n d)) d)) (+ n d)))))
+
+      (sqrtConvergents 998 7 5)
+    alt-code-link: https://github.com/Staggier/ProjectEuler/blob/master/scheme/PE%23057.rkt
+  -
+    title: Square root digital expansion
+    link: https://projecteuler.net/problem=80
+    description: >-
+      The Square root digital expansion problem asks to solve for the digit sum of all irrational square roots of n,
+      where n ranges from 1-100.
+    solution: >-
+      This problem was really fun to work out, I had to refresh on some math to work out the algorithm by hand and then
+      translate it into code once I felt comfortable with it. 
+    alt-code-link: https://github.com/Staggier/ProjectEuler/blob/master/python/PE%23080.py
+  -
+    title: Sudoku
+    link: https://projecteuler.net/problem=96/
+    description: >-
+      The Sudoku problem is as the name suggests, Sudoku! Tasked with solving a set of given 9x9 Sudoku
+      grids with one given solution, the problem is asking to take the three top left digits from the solved
+      Sudoku grids and find the sum of those three digit numbers.
+    solution: >-
+      To solve this problem I used a recursive algorithm to test all valid options in a grid and backtrack
+      when it wasn't possible to go further, until of course a solution is found.
+    alt-code-link: https://github.com/Staggier/ProjectEuler/blob/master/C%23/PE%23096.cs

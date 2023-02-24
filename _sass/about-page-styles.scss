@@ -16,6 +16,13 @@
 }
 
 #about-wrapper ul ul {
-    flex-direction: column;
-  }
-  
+  flex-direction: column;
+}
+
+#skills-list {
+    margin: 25px 0px 25px 0px;
+}
+
+#experience-list li ul {
+  list-style: none;
+}

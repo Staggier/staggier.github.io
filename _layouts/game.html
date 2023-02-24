@@ -20,7 +20,7 @@
       <div class="wrapper">
         <h4 id="game-page-header">Over the years I've had the pleasure of developing a few games as school projects and I'm looking forward to developping more as a hobby or professionally if given the chance.</h4>
         <ul id="game-list">
-            {%- for game in site.data.game.games -%}
+            {%- for game in site.data.games.games -%}
             <li>
               <div class="gallery">
                 <img id="{{ game.name | replace: ' ', '-' | downcase }}-img" src="{{ game.pics[0] }}" />

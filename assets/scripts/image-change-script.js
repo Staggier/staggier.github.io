@@ -1,10 +1,5 @@
 function nextImageclick(id, images, index) {
-    var pics = images.split("png");
-    pics.pop();
-
-    for (let i = 0; i < pics.length; i++) {
-        pics[i] += "png";
-    }
+    var pics = images.split(" ");
 
     var i = parseInt(index)
     
@@ -14,6 +9,8 @@ function nextImageclick(id, images, index) {
 
     i += 1;
 
-    document.getElementById((id.split('button'))[0] + "img").src = pics[i];
+    img_id = id.replace('button', 'img')
+
+    document.getElementById(img_id).src = pics[i];
     document.getElementById(id).dataset.index = i;
 }

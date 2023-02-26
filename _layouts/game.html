@@ -18,23 +18,7 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h4 id="game-page-header">Over the years I've had the pleasure of developing a few games as school projects and I'm looking forward to developping more as a hobby or professionally if given the chance.</h4>
-        <ul id="game-list">
-            {%- for game in site.data.games.games -%}
-            <li>
-              <div class="gallery">
-                <img id="{{ game.name | replace: ' ', '-' | downcase }}-img" src="{{ game.pics[0] }}" />
-                <button id="{{ game.name | replace: ' ', '-' | downcase }}-button" data-pics="{{ game.pics }}" data-index="0" onclick="nextImageclick(this.id, this.dataset.pics, this.dataset.index)"> Next </button>          
-                <div class="game-info"> 
-                  <h2> {{ game.name }} </h2>
-                  <h3> Created {{ game.date }} </h3>
-                  <p> {{ game.description }} </p>
-                  <p><a href="https://github.com/Staggier/{{ game.name | remove: ' ' }}/#readme">Click here to visit the repo.</a></p>
-                </div>
-              </div>
-            </li>
-            {%- endfor -%} 
-        </ul>
+        {{ content }}
       </div>
     </main>
 

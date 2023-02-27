@@ -1,26 +1,28 @@
 @media (max-width: 425px) {
-  #about-wrapper ul {
+  #skills-list {
     flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  #skills-list ul {
     margin-bottom: 15px;
   }
 }
 
-#about-wrapper ul {
+#skills-list {
+  margin: 25px 0px 25px 0px;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-#about-wrapper ul ul {
+#skills-list ul {
   list-style: circle;
-}
-
-#about-wrapper ul ul {
   flex-direction: column;
 }
 
-#skills-list {
-    margin: 25px 0px 25px 0px;
+#experience-list {
+  list-style: none;
 }
 
 #experience-list li ul {

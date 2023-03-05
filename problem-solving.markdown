@@ -27,7 +27,7 @@ Although it may seem biased, here are some of my favorite problems which can all
       {% endif %}
     {% endif %}
     {% if problem.alt-code-link != null %}
-      If interested, you can view an alternate solution in my <a class="alt-code-link" href="{{problem.alt-code-link}}">github repo</a>.
+      If interested, you can view an alternate solution on my <a class="alt-code-link" href="{{problem.alt-code-link}}">github</a>.
     {% endif %}
   </li>
   {%- endfor -%}

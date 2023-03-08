@@ -9,10 +9,10 @@ permalink: /under-development/
     <iframe id="game-frame" src="/assets/DummyGame/DummyGame.html"></iframe>
   </div>
 
-  <h3 id="controls">Move with <code>WASD</code>, press <code>T</code> to use tools and use <code>&#x2190;</code> and <code>&#x2192;</code> to cycle through them.</h3>
+  <h3 id="controls">Move with <code>W</code><code>A</code><code>S</code><code>D</code>, press <code>F</code> to feed cows, press <code>T</code> to use tools and use <code>&#x2190;</code> and <code>&#x2192;</code> to cycle through them.</h3>
 
   <p>
-    As I explore more ways to tackle game development I thought I'd share my progress as I learn Godot, an open-source game engine. Godot speeds up a lot of processes in game development so you can really throw something together in a short amount of time.
+    As I explore more ways to tackle game development I thought I'd share my progress as I learn Godot 3.5 and the newly released Godot 4. Godot is a free and open-source game engine that really helps speed up a lot of processes in game development, so you can really throw something together in a short amount of time.
   </p>
 
   <p>
